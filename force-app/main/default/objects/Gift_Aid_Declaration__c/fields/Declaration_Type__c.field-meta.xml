@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Declaration_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Declaration Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>This donation only</fullName>
+                <default>false</default>
+                <label>This donation only</label>
+            </value>
+            <value>
+                <fullName>This donation and all future</fullName>
+                <default>false</default>
+                <label>This donation and all future</label>
+            </value>
+            <value>
+                <fullName>This donation, all future and past</fullName>
+                <default>false</default>
+                <label>This donation, all future and past</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

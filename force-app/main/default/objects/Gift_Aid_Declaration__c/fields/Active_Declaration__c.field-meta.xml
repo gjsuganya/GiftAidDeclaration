@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Declaration__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(and( not(isblank(Related_Contact__r.MailingAddress)),not(ISBLANK( Related_Contact__r.MailingStreet)), not(ISBLANK( Related_Contact__r.MailingCity)),not(ISBLANK( Related_Contact__r.MailingCountry)),not(isblank(Related_Contact__r.MailingPostalCode)), not(isblank(Related_Contact__r.LastName)), not(isblank(Related_Contact__r.FirstName)), Declaration_Start_Date__c &lt;= today(),or( Declaration_End_Date__c &gt;today(), isblank(Declaration_End_Date__c ))), true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Active Declaration</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
